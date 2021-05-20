@@ -1,10 +1,10 @@
 # Gérant de produit de magasin ( Lambert ) ⚛
 
-- [ ] **Produit ( ajouter, modifier, supprimer)
-- [ ] **Categorie
-- [ ] **Employer
-- [ ] **Commande
-- [ ] **Client
+- [ ] Produit ( ajouter, modifier, supprimer)
+- [ ] Categorie
+- [ ] Employer
+- [ ] Commande
+- [ ] Client
 
 ### Login (Screen)
 #### Class Employer 🛐
@@ -18,3 +18,4 @@
 
 ## Outils 🔧
 > Python (Kivy) 
+> vscode 
