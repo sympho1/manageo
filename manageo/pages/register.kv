@@ -1,0 +1,71 @@
+#: import InputWid widgets.input.InputWid
+#: import Btn widgets.btn.Btn
+<RegisterScreen>:
+    canvas:
+        Color:
+            rgba: (1, 0, 1, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            pos: self.width/4 , self.pos[1] + self.height/12
+            size: self.width * 0.5 , self.height * 0.85
+    Label:
+        text: "MANAGEO"
+        color: (1, 0, 1, 1)
+        pos_hint: {"center_x":0.5, "center_y":0.85}
+        font_size: 20
+    
+    MyLabel:
+        text: "Nom et Prenoms"
+        pos_hint: {"center_x":0.5, "center_y":0.75}
+        #font_size: 20
+    InputWid:
+        pos_hint: {"center_x":0.5, "center_y":0.70}
+        size_hint: (0.4, None)
+        height: 30
+        hint_text: "Entrer le nom et le prenom"
+ 
+    MyLabel:
+        text: "Email"
+        pos_hint: {"center_x":0.5, "center_y":0.60}
+        #font_size: 20
+    InputWid:
+        pos_hint: {"center_x":0.5, "center_y":0.55}
+        size_hint: (0.4, None)
+        height: 30
+        hint_text: "Entrer le mail"
+    
+    MyLabel:
+        text: "Telephone"
+        pos_hint: {"center_x":0.5, "center_y":0.45}
+        #font_size: 20
+    InputWid:
+        pos_hint: {"center_x":0.5, "center_y":0.40}
+        size_hint: (0.4, None)
+        height: 30
+        hint_text: "Entrer le telephone"
+    
+    MyLabel:
+        text: "Mot de pass"
+        pos_hint: {"center_x":0.5, "center_y":0.30}
+        #font_size: 20
+    InputWid:
+        pos_hint: {"center_x":0.5, "center_y":0.25}
+        size_hint: (0.4, None)
+        height: 30
+        hint_text: "Entrer le mot de pass"
+
+    Btn:
+        pos_hint: {"center_x":0.5, "center_y":0.15}
+        size_hint: (0.4, None)
+        height: 40
+        
+
+<MyLabel@Label>:
+    size_hint: (0.4, None)
+    height: 20
+    text_size: self.size
+    color: (1, 0, 1, 1)
