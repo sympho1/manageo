@@ -6,8 +6,7 @@
 - [ ] Commande
 - [ ] Client
 
-### Login (Screen)
-#### Class Employer 🛐
+### Login (Screen)🛐
 * nom = " "
 * email = " "
 * phone = " "
@@ -17,5 +16,5 @@
 * pass = " "
 
 ## Outils 🔧
-> Python (Kivy) 
-> vscode 
+- Python (framework Kivy)
+- vscode
