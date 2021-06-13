@@ -39,13 +39,16 @@
         hint_text: "Entrer le mot de pass"
 
     Label:
-        text: "register"
         pos_hint: {"x":0.62, "center_y":0.25}
         size_hint: (0.4, None)
         height: 20
         text_size: self.size
         color: (1, 0, 1, 1)
         #on_press: root.manager.current = 'register'
+        text: '[ref=hello]register[/ref]'
+        markup: True
+        on_ref_press: app.sm.current = "register"
+
     
 
     Btn:
