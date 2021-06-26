@@ -1,0 +1,18 @@
+<HomeScreen>:
+    canvas:
+        Color:
+            rgba: (1, 0, 1, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            pos: self.width/4 , self.pos[1] + self.height/12
+            size: self.width * 0.5 , self.height * 0.85
+    Label:
+        text: "MANAGEO"
+        color: (1, 0, 1, 1)
+        pos_hint: {"center_x":0.5, "center_y":0.85}
+        font_size: 20
+ 

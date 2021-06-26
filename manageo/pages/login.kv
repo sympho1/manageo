@@ -36,16 +36,17 @@
         pos_hint: {"center_x":0.5, "center_y":0.45}
         size_hint: (0.4, None)
         height: 30
+        password: True
         hint_text: "Entrer le mot de pass"
 
     Label:
-        pos_hint: {"x":0.62, "center_y":0.25}
+        pos_hint: {"center_x":0.5, "center_y":0.25}
         size_hint: (0.4, None)
         height: 20
         text_size: self.size
         color: (1, 0, 1, 1)
         #on_press: root.manager.current = 'register'
-        text: '[ref=hello]register[/ref]'
+        text: '[u][color=ff0000][ref=hello]Register[/ref][/color][/u]'
         markup: True
         on_ref_press: app.sm.current = "register"
 

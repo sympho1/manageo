@@ -15,54 +15,70 @@
     Label:
         text: "MANAGEO"
         color: (1, 0, 1, 1)
-        pos_hint: {"center_x":0.5, "center_y":0.85}
+        pos_hint: {"center_x":0.5, "center_y":0.90}
         font_size: 20
     
     MyLabel:
         text: "Nom et Prenoms"
-        pos_hint: {"center_x":0.5, "center_y":0.75}
+        pos_hint: {"center_x":0.5, "center_y":0.80}
         #font_size: 20
     InputWid:
-        pos_hint: {"center_x":0.5, "center_y":0.70}
+        id:nom_id
+        pos_hint: {"center_x":0.5, "center_y":0.75}
         size_hint: (0.4, None)
         height: 30
         hint_text: "Entrer le nom et le prenom"
  
     MyLabel:
         text: "Email"
-        pos_hint: {"center_x":0.5, "center_y":0.60}
+        pos_hint: {"center_x":0.5, "center_y":0.65}
         #font_size: 20
     InputWid:
-        pos_hint: {"center_x":0.5, "center_y":0.55}
+        id:email_id
+        pos_hint: {"center_x":0.5, "center_y":0.60}
         size_hint: (0.4, None)
         height: 30
         hint_text: "Entrer le mail"
     
     MyLabel:
-        text: "Telephone"
-        pos_hint: {"center_x":0.5, "center_y":0.45}
-        #font_size: 20
-    InputWid:
-        pos_hint: {"center_x":0.5, "center_y":0.40}
-        size_hint: (0.4, None)
-        height: 30
-        hint_text: "Entrer le telephone"
-    
-    MyLabel:
         text: "Mot de pass"
-        pos_hint: {"center_x":0.5, "center_y":0.30}
+        pos_hint: {"center_x":0.5, "center_y":0.50}
         #font_size: 20
     InputWid:
-        pos_hint: {"center_x":0.5, "center_y":0.25}
+        id:pass_id
+        pos_hint: {"center_x":0.5, "center_y":0.45}
         size_hint: (0.4, None)
+        password: True
         height: 30
         hint_text: "Entrer le mot de pass"
+    MyLabel:
+        text: "Confirmer le mot de pass"
+        pos_hint: {"center_x":0.5, "center_y":0.35}
+        #font_size: 20
+    InputWid:
+        id:confirm_pass_id
+        pos_hint: {"center_x":0.5, "center_y":0.30}
+        size_hint: (0.4, None)
+        height: 30
+        password: True
+        hint_text: "confirmer le mot de pass"
 
     Btn:
         pos_hint: {"center_x":0.5, "center_y":0.15}
         size_hint: (0.4, None)
         height: 40
+        on_press: root.user_register()
         
+    Label:
+        pos_hint: {"center_x":0.5, "center_y":0.22}
+        size_hint: (0.4, None)
+        height: 20
+        text_size: self.size
+        color: (1, 0, 1, 1)
+        #on_press: root.manager.current = 'login'
+        text: '[u][color=ff0000][ref=hello]Login[/ref][/color][/u]'
+        markup: True
+        on_ref_press: app.sm.current = "login"
 
 <MyLabel@Label>:
     size_hint: (0.4, None)
