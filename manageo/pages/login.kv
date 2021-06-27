@@ -23,6 +23,7 @@
         pos_hint: {"center_x":0.5, "center_y":0.70}
         #font_size: 20
     InputWid:
+        id:email_id
         pos_hint: {"center_x":0.5, "center_y":0.65}
         size_hint: (0.4, None)
         height: 30
@@ -33,6 +34,7 @@
         pos_hint: {"center_x":0.5, "center_y":0.50}
         #font_size: 20
     InputWid:
+        id:pass_id
         pos_hint: {"center_x":0.5, "center_y":0.45}
         size_hint: (0.4, None)
         height: 30
@@ -56,7 +58,9 @@
         pos_hint: {"center_x":0.5, "center_y":0.15}
         size_hint: (0.4, None)
         height: 40
-        
+        on_press: root.user_login()
+        #on_press: app.sm.current = "home_screen"
+
 <MyLabel@Label>:
     size_hint: (0.4, None)
     height: 20

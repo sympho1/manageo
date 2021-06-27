@@ -1,20 +1,29 @@
 # Gérant de produit de magasin ( Lambert ) ⚛
 
-- [ ] Produit ( ajouter, modifier, supprimer)
-- [ ] Categorie
-- [ ] Employer
-- [ ] Commande
-- [ ] Client
+- Produit ( CRUD )
+- Categorie ( Produit )
+- Employer ( Owner )
+- Commande ( Produit )
+- Client ( User )
 
-### Login (Screen)🛐
-* nom = " "
-* email = " "
-* phone = " "
+### RegisterScreen (Screen)🎆
+```python
+class RegisterScreen(Screen):
+    nom = TextField
+    email = TextField
+    pwd = TextField
+    confirm_pwd = TextField
+```
 
-### Singup (Screen) 🎆
-* email = " "
-* pass = " "
+### LoginScreen (Screen)🎆
+```python
+class LoginScreen(Screen):
+   email = TextField
+   pwd = TextField
+```
 
 ## Outils 🔧
 - Python (framework Kivy)
-- vscode
+- Visual Studio Code
+- Git & Github
+- Time

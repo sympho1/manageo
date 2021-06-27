@@ -16,14 +16,15 @@ class RegisterScreen(Screen):
         pwd = self.ids.pass_id.text
         confirm_pwd = self.ids.confirm_pass_id.text
         if nom == "" or email == "" or pwd == "" or confirm_pwd == "":
-            print('erreur')
+            # print('erreur')
+            pass
         else:
             User(name = nom, email = email, password = pwd)
             orm.commit()
             self.ids.nom_id.text = ""
             self.ids.email_id.text = ""
             self.ids.pass_id.text = ""
-            print(nom, email, pwd, confirm_pwd)
+            # print(nom, email, pwd, confirm_pwd)
             appli = App.get_running_app()
             appli.sm.current = "login"
        
